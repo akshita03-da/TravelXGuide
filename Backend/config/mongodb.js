@@ -13,7 +13,7 @@ const connectDB = async () => {
         family: 4, // Use IPv4, skip trying IPv6
     };
 
-    await mongoose.connect(`${process.env.MONGODB_URI}/travel-auth`, options);
+    await mongoose.connect(process.env.MONGODB_URI, options);
     
     // ⚡ PERFORMANCE: Enable query result caching
     mongoose.set('strictQuery', true);
