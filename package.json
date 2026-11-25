@@ -1,9 +1,12 @@
 {
   "name": "travelxguide",
   "private": true,
+  "workspaces": [
+    "Frontend"
+  ],
   "scripts": {
-    "dev": "cd Frontend && ./node_modules/.bin/vite",
-    "start": "cd Frontend && ./node_modules/.bin/vite",
-    "build": "cd Frontend && ./node_modules/.bin/vite build"
+    "dev": "npm run dev -w Frontend",
+    "start": "npm run dev -w Frontend",
+    "build": "npm run build -w Frontend"
   }
 }
