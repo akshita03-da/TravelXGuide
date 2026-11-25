@@ -2,7 +2,8 @@
   "name": "travelxguide",
   "private": true,
   "scripts": {
-    "dev": "npm run dev --prefix Frontend",
-    "build": "npm run build --prefix Frontend"
+    "dev": "cd Frontend && ./node_modules/.bin/vite",
+    "start": "cd Frontend && ./node_modules/.bin/vite",
+    "build": "cd Frontend && ./node_modules/.bin/vite build"
   }
 }
